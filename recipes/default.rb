@@ -9,8 +9,10 @@ if node["platform"] == "ubuntu"
   package_name = "apache2"
 end
 
+service_name = package_name
+
 package "#{package_name}"
 
-service "httpd" do
+service service_name do
   action :start
 end
