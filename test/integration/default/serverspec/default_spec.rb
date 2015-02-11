@@ -21,7 +21,7 @@ describe 'apache::default' do
   it 'listening on the correct port' do
     expect(port 80).to be_listening
   end
-  
+
   it 'returns a valid home page' do
     expect(command("wget http://localhost").exit_status).to eq 0
   end

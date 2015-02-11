@@ -22,7 +22,7 @@ describe 'apache::default' do
     it 'installs apache' do
       expect(chef_run).to install_package "httpd"
     end
-    
+
     it 'ensures that the apache service is running' do
       expect(chef_run).to start_service "httpd"
     end
@@ -42,7 +42,7 @@ describe 'apache::default' do
     it 'installs apache' do
       expect(chef_run).to install_package "apache2"
     end
-    
+
     it 'ensures that the apache service is running' do
       expect(chef_run).to start_service "apache2"
     end
