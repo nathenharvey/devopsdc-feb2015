@@ -7,6 +7,7 @@
 package_name = "httpd"
 if node["platform"] == "ubuntu"
   package_name = "apache2"
+  include_recipe "apt::default"
 end
 
 service_name = package_name
