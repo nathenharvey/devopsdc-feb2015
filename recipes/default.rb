@@ -8,9 +8,9 @@ if node["platform"] == "ubunutu"
   package_name = "apache"
 end
 
-package "#{package_name}" 
+package "#{package_name}"
 
-# package package_name 
+# package package_name
 
 service "httpd" do
   action :start

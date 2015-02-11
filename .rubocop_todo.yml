@@ -66,7 +66,3 @@ Style/StringLiterals:
 Style/TrailingBlankLines:
   Enabled: false
 
-# Offense count: 5
-# Cop supports --auto-correct.
-Style/TrailingWhitespace:
-  Enabled: false
