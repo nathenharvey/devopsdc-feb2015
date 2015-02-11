@@ -3,14 +3,13 @@
 # Recipe:: default
 #
 # Copyright (c) 2015 The Authors, All Rights Reserved.
+
 package_name = "httpd"
-if node["platform"] == "ubunutu"
-  package_name = "apache"
+if node["platform"] == "ubuntu"
+  package_name = "apache2"
 end
 
 package "#{package_name}"
-
-# package package_name
 
 service "httpd" do
   action :start
