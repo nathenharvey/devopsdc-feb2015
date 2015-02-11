@@ -14,7 +14,7 @@ end
 
 service_name = package_name
 
-package "#{package_name}"
+package package_name
 
 service service_name do
   action :start
